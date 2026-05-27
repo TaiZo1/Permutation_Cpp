@@ -29,13 +29,32 @@ It also includes tools for studying permutation groups and their properties.
 ```
 Permutation_Cpp/
 ├── include/
-│   ├── permutation.hpp       
+│   └── permutation.hpp
 ├── src/
-│   └── permutation.cpp       
+│   └── permutation.cpp
 ├── test/
 │   └── test_permutation.cpp
-├── README.md 
-├── .gitignore 
+├── CMakeLists.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+## Build
+
+Requires CMake ≥ 3.15 and a C++17 compiler.
+
+```bash
+cmake -B build
+cmake --build build
+```
+
+Run the example:
+
+```bash
+./build/permutation_test               # Linux / macOS
+.\build\Debug\permutation_test.exe     # Windows (MSVC)
 ```
 
 ---
